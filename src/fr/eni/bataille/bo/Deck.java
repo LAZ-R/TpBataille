@@ -3,9 +3,19 @@ package fr.eni.bataille.bo;
 import fr.eni.bataille.enumerations.Couleur;
 import fr.eni.bataille.enumerations.Valeur;
 
+/** Classe qui représente un paquet de 52 cartes classique
+ *
+ * @author laz_R
+ * @version 1.0
+ */
 public class Deck {
 
+    /** Méthode à appeler pour le remplissage d'un paquet de carte
+     *
+     * @return Carte[] retourne un tableau de carte rempli
+     */
     public Carte[] nouveau_deck() {
+
         Carte[] deck_complet = new Carte[52];
 
         deck_complet[0] = new Carte(Couleur.CARREAU, Valeur.AS);
